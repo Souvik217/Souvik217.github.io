@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+   }
+.navbar{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    
+    
+}
+.nav_list{
+    width: 70%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.nav_list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+.nav_list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family:sans-serif;
+}
+.nav_list li a:hover{
+    text-decoration:solid;
+    color: grey;
+}  
+.rightnav{
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+    
+    
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border:2px solid grey;
+    border-radius: 9px;
+    width: fit-content;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url(images/aaa.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstsection{
+    height: 90vh;
+}
+.box-main{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color: white;
+    max-width: 70%;
+    margin: auto;
+    height: 90%;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+.firsthalf{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondhalf{
+    width: 50%;
+}
+.secondhalf img{
+    width: 100%;
+    display: block;
+    margin: auto;
+    
+    
+}
+.text-big{
+    padding: 16px 0;
+    font-size: 45px;  
+}
+
+.text-small{
+    font-size: 18px;
+    padding: 16px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.btn{
+    padding: 8px 25px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    color: white; 
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+.secright{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: 10px 120px;
+    border: 4px solid #01cc65;
+    
+}
+.rr{
+    border-left: 0px;
+    
+}
+.ll{
+    border-right: 0px;
+    
+}
+.paras{
+    padding: 0px 80px;
+}
+.thumbnail img{
+    width: 120%;
+}
+
+.sectiontag{
+    padding: 16px 0;
+}
+.heading{
+    text-align:center;
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: #eee;
+    font-weight: bolder;
+
+}
+.check{
+    display: flex;
+}
+.side_image{
+    width: 57%;
+    text-align: center;
+    
+    
+}
+.checkform{
+    width: 27%;
+    text-align: center;
+    
+}
+
+.end{
+    background-color: rgb(46, 46, 46);
+    height: 50px;
+}
+.love{
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+.burger{
+    display: none;
+    position:absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    margin: 5px 3px;
+    height: 4px;
+}
+.radio-container{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type='radio']{
+    display: none;
+}
+label{
+    
+    color: #01cc65;
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    border: 2px solid #01cc65;
+    border-radius: 42px;
+    padding: 5px 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+label:before{
+    
+    content: "";
+    height: 20px;
+    width:20px;
+    border: 3px solid #01cc65;
+    border-radius: 50%;
+    margin-right: 13px;
+
+}
+input[type='radio']:checked + label{
+    background-color: #01cc65;
+    color: white;
+}
+input[type='radio']:checked+label:before{
+    height: 8px;
+    width: 8px;
+    border: 8px solid white;
+    background-color: #01cc65;
+}
+
+
+  .xyz{
+    font-size: 20px;
+    font-family:cursive;
+    font-weight:bolder;
+    padding: 10px 10px;
+  }
+  .sub{
+    text-align: center;
+    padding: 33px 0px;
+    margin: auto;
+    height:100px;
+  }
+  .bbb{
+    padding: 8px 25px;
+    margin: 7px 3px;
+    border: 2px solid #01cc65;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    color: #01cc65;
+    font-family:'Poppins',sans-serif;
+    letter-spacing: 1px;
+  }
+  .bbb:hover{
+    background-color:#01cc65;
+    color:white;
+    font-size: large;
+    font-weight: bolder;
+}
+
+
+@media only screen and (max-width:1140px) {
+    .check{
+        flex-direction: column-reverse;
+    margin: 6px 21px;
+    }
+    .side_image{
+        width: 0%;
+        
+    }
+    .side_image img{
+        width: 0%;
+        height: 0%;
+    }
+    .checkform{
+        background-color: #eee;
+        width: 100%;
+        text-align: center;
+    }
+    .nav_list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 400px;
+        transition: all 0.7s ease-out;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        height: 150px;
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .hh{
+        text-align: center;
+    }
+    .secondhalf img{
+        
+        width: 0%;
+        border: 0ch;
+    }
+    .bb{
+        margin: auto;
+    }
+    .secright{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: fit-content;
+        margin: 18px 37px;
+        height: fit-content;
+        padding: 10px 18px;
+        border: 4px solid #01cc65;
+        box-shadow: 1px 1px 33px #000;
+        
+    }
+    .rr{
+        flex-direction: column-reverse;
+    }
+    .thumbnail{
+        width: 50%;
+        height: 50%;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .paras{
+        padding: 0px 0px;
+    }
+    .checkform img{
+        width: auto;
+        opacity: 0.2;
+        
+    }
+    
+}
