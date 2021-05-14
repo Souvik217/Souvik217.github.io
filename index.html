@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoCHECK</title>
+    <link rel="stylesheet" href="../static/style2.css">
+    <link rel="stylesheet" href="../static/ss.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    
+    <link rel = "icon" href ="../static/images/logo2.png" type = "image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="logo"><h1></h1></div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Outbreaks</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Vaccination</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+            </span>
+        </ul>
+    </nav>
+    
+    
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firsthalf">
+                <p class="text-big hh">Test Yourself</p>
+                <p class="text-small">Testing can help people determine if they are infected with SARS-CoV-2 – regardless of whether they have symptoms – and whether they are at risk of spreading the infection to others. Taking 
+                    measures to prevent the spread of infection will be the most effective strategy for getting us safely back to work.
+                </p>
+                <div class="buttons bb">
+                    <button class="btn" onClick="document.getElementById('checkk').scrollIntoView();">Test Now</button>
+                </div>
+            </div>
+            <div class="secondhalf">
+                <img src="../static/images/ss.png" alt="Stay Safe">
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section class="secright ll">
+        <div class="paras">
+            <p class="sectiontag text-big">Always Wear Mask</p>
+            <p class="sectionsubtag text-small">Masks should be used as part of a comprehensive strategy of measures to suppress transmission and save lives; the use of a mask alone is 
+                not sufficient to provide an adequate level of protection against COVID-19.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="../static/images/mask.jpg" alt="" class="imgfluid">
+        </div>
+        
+    </section>
+
+    <section class="secright rr">
+        <div class="thumbnail">
+            <img src="../static/images/sanii.png" alt="" class="imgfluid">
+        </div>
+        <div class="paras">
+            <p class="sectiontag text-big">Wash Regularly</p>
+            <p class="sectionsubtag text-small">With COVID-19 transmission mainly spreading between people through direct, indirect (through contaminated objects or surfaces), or close contact with 
+                infected people via mouth and nose secretions, washing hands with soap and running water is of critical importance.</p>
+        </div>
+        
+    </section>
+
+    <section class="secright ll">
+        <div class="paras">
+            <p class="sectiontag text-big">Maintain Social Distancing</p>
+            <p class="sectionsubtag text-small">Since people can spread the virus before they know they are sick, it is important to stay at least 6 feet away from others when possible, even if you—or they—do not have
+                symptoms. Social distancing is especially important for people who are at higher risk for severe illness from COVID-19.</p>
+        </div>
+        <div class="thumbnail x">
+            <img src="../static/images/social.png" alt="" class="imgfluid">
+        </div>
+        
+    </section>
+    <br>
+    <br>
+
+    <p class=" heading" id="checkk">Check Your Risk</p>
+    <section class="check">
+        
+        <div class="side_image">
+            <img src="../static/images/test.jpg" alt="">
+            <br>
+            <br>
+            <h3>{{ pred }}</h3>
+
+            <br>
+            <br>
+        </div>
+        <div class="checkform">
+            <form action='/predict' method="POST">
+                
+                <p class="xyz">GENDER</p>
+                <div class="radio-container">
+                    <input type="radio" name="gender" value="1" id="yes1" required>
+                    <label for="yes1">Male</label>
+                    <input type="radio" name="gender" value="0" id="no1" required>
+                    <label for="no1">Female</label>
+                </div>
+                
+                <p class="xyz">Age Above 60</p>
+                <div class="radio-container">
+                    <input type="radio" name="age" value="1" id="yes2" required>
+                    <label for="yes2">Yes</label>
+                    <input type="radio" name="age" value="0" id="no2" required>
+                    <label for="no2">No</label>
+                </div>
+                <p class="xyz">Cough</p>
+                <div class="radio-container">
+                    <input type="radio" name="cough" value="1" id="yes3" required>
+                    <label for="yes3">Yes</label>
+                    <input type="radio" name="cough" value="0" id="no3" required>
+                    <label for="no3">No</label>
+                </div>
+                <p class="xyz">Fever</p>
+                <div class="radio-container">
+                    <input type="radio" name="fever" value="1" id="yes4" required>
+                    <label for="yes4">Yes</label>
+                    <input type="radio" name="fever" value="0" id="no4" required>
+                    <label for="no4">No</label>
+                </div>
+                
+                <p class="xyz">Sore Throat</p>
+                <div class="radio-container">
+                    <input type="radio" name="sore_throat" value="1" id="yes5" required>
+                    <label for="yes5">Yes</label>
+                    <input type="radio" name="sore_throat" value="0" id="no5" required>
+                    <label for="no5">No</label>
+                </div>
+                <p class="xyz">Shortness of Breath</p>
+                <div class="radio-container">
+                    <input type="radio" name="breath" value="1" id="yes6" required>
+                    <label for="yes6">Yes</label>
+                    <input type="radio" name="breath" value="0" id="no6" required>
+                    <label for="no6">No</label>
+                </div>
+                <p class="xyz">Headache</p>
+                <div class="radio-container">
+                    <input type="radio" name="headache" value="1" id="yes7" required>
+                    <label for="yes7">Yes</label>
+                    <input type="radio" name="headache" value="0" id="no7" required>
+                    <label for="no7">No</label>
+                </div>
+                <p class="xyz">Contact with Confirmed Person</p>
+                <div class="radio-container">
+                    <input type="radio" name="confirmed" value="1" id="yes8" required>
+                    <label for="yes8">Yes</label>
+                    
+                    <input type="radio" name="confirmed" value="0" id="no8" required>
+                    <label for="no8">No</label>
+                </div>
+                <div class="sub" ><button type="submit" class="bbb" onClick="document.getElementById('checkk').scrollIntoView();">Submit</button></div>
+    
+            </form>
+
+            
+            
+        </div>
+        
+        
+    </section>
+    
+    
+    <section class="end">
+        <p class="love">Made with Love</p>
+    </section>
+
+    <script src="../static/res.js"></script>
+    
+</body>
+</html>
